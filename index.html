@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Recebimento de Veículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist de Recebimento de Veículo</h1>
+        <textarea id="ocorridos" placeholder="Descreva o ocorrido e as peças danificadas..."></textarea>
+        
+        <div class="image-upload">
+            <input type="file" id="imageInput" multiple accept="image/*" capture="camera">
+            <button id="addImages">Adicionar Imagens</button>
+        </div>
+        
+        <div id="imagePreview" class="image-preview"></div>
+        
+        <button id="generateReport">Gerar Relatório</button>
+        <button id="printReport">Imprimir Relatório</button>
+        
+        <div id="report" class="report" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
